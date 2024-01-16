@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/string_selector.js"></script>
+    
+    <link rel="stylesheet" href="../css/output.css">
+    <title>Ejercicio String Selector</title>
+</head>
+<body>
+    <h1 class="text-teal-900 text-center text-2xl">Ejercicio String Selector</h1>
+    <div class="container mx-auto flex justify-center bg-sky-400 h-14  rounded
+                items-center w-2/3 px-2" >
+                <button id="checkEmailButton" onclick="onClickEmail()"
+                        class="bg-transparent hover:bg-blue-500 text-blue-700
+                               hover:text-white font-bold py-2 px4 rounded-full">Check Email</button>
+        <input type="text" id="email" size="20" placeholder="email" onkeyup="handleChart()"
+                class="px-4 m-2">
+        <input type="color" id="inputColor" onchange="changeColor()"/>
+       
+    </div>
+    <div id="showCharts" class="flex justify-center bg-neutral-500 m-5 min-h-10
+             rounded items-center"></div>
+</body>
+</html>
