@@ -2213,10 +2213,6 @@ video {
   opacity: 1;
 }
 
-.opacity-20 {
-  opacity: 0.2;
-}
-
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -2588,6 +2584,12 @@ video {
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
   }
 }
 
