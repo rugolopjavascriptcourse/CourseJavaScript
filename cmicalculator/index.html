@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div><h1>CMI Calculator</h1></div>
+    <div class="form">
+        <form action="">
+            <fieldset>
+                <legend>Select your Sex.:</legend>
+                <input type="radio" name="sex" id="sexFemale" value="female">
+                <label for="sexFemale"> Female</label>
+                <input type="radio" name="sex" id="sexMale" value="male">
+                <label for="sexMale">Male</label>
+            </fieldset>
+            <fieldset>
+                <legend>Age</legend>
+                <input id="age" class="age" type="range" max="120" min="10" on>
+                <label id="lblAge" for="age"></label>
+            </fieldset>
+            <fieldset>
+                <label for="weigth">Weight.: </label>
+                <input id="weigth" type="number" placeholder="Type the weight" required>
+                <label for="long">Long.:</label>
+                <input id="long" type="number" placeholder="Type the long" required>
+            </fieldset>
+    
+            <input class="calculateButton" id="operate" type="button" value="Calcular">
+        </form>
+        
+    </div>
+    <div id="result" class="result"></div>
+</body>
+</html>
+<script src="./js/calculator.js"></script>
