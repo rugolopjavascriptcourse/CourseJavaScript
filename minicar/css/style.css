@@ -1,0 +1,83 @@
+body {
+    background-color: beige;
+    
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+div {
+    border-radius: 10px;
+    background-color: azure;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    width: 80%;   
+    height: max-content;
+    padding: 20px;
+    box-shadow: 60px, black;
+    text-align: center;
+}
+
+.result {
+    color:coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+
+.form {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.age {
+    width: 400px;
+}
+
+input{
+    margin: 2px;
+}
+button{
+    
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(232, 96, 96);
+    background-image: linear-gradient(
+        to top left,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        rgb(0 0 0 / 0%)
+    );
+    box-shadow:
+        inset 2px 2px 3px rgb(255 255 255 / 60%),
+        inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+
+button:hover {
+  background-color: rgb(234, 141, 141);
+}
+
+button:active {
+  box-shadow:
+    inset -2px -2px 3px rgb(255 255 255 / 60%),
+    inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+
+fieldset {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: cadetblue;
+}
+legend {
+    font-size:medium;
+    font-style: normal;
+    font-weight: normal;
+}
