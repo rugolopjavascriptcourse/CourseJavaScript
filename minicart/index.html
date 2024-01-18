@@ -16,7 +16,14 @@
     <div>  
         <fieldset>
             <legend>Add new Product</legend>
+            <select name="selectProductType" id="selectProductType">
+                <option value="">Select an option..</option>
+            </select>
+            <select name="selectProduct" id="selectProduct">
+                <option value="">Select an option..</option>
+            </select>
             <input id="product" type="text" placeholder="Product name" required>
+            <input type="number" name="units" id="units" placeholder="Units">
         </fieldset>
         
         <button class="addProduct" id="addProduct" type="submit" value="Add Product">
@@ -36,4 +43,4 @@
     <div id="result" class="result"></div>
 </body>
 </html>
-<script src="./js/minicar.js"></script>
+<script src="./js/minicart.js"></script>
