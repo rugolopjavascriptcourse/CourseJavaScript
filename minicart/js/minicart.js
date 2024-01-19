@@ -54,9 +54,8 @@ typeProducts.forEach(element => {
 select.addEventListener('change', () => newProduct.value = select.value )
 
 selectTypeProduct.addEventListener('change', () => {
-    
     productsXType = products.filter( product => product.type === selectTypeProduct.value )
-    productsXType.forEach(element => {
+    productsXType.forEach((element, index) => {
         let option = document.createElement('option')
         option.text = element.name
         option.value = element.name
@@ -72,7 +71,8 @@ document.querySelector('#addProduct').addEventListener('click', function(){
         alert('Add a valid product')
     }else{
         cart.push(newProduct)
-        document.querySelector('#result').innerHTML += `${newProduct}<br>`
+        document.querySelector('#result').innerHTML += 
+            `${newProduct} &emsp &emsp ${newProduct}<br>`
     }
     
    console.log('%c%s', 'color: #1d5673', newProduct); 
@@ -90,6 +90,24 @@ document.querySelector('#showCar').addEventListener('click', function(){
     }
     
 })
+/**
+ * ARRAYS
+ */
+let ficheros = ['perrito.jpg', 'gatito.avi', 'loro.mp3', 'galapago.docx', 'gallo.jpg']
+
+ficheros.forEach(element => {
+    if (element.slice((element.lastIndexOf('.')+1),) === 'jpg') {
+        console.log('%c%s', 'color: #e57373', element.slice(0,element.lastIndexOf('.')).toUpperCase());
+    }
+});
+
+console.log(ficheros.filter(element => element.slice((element.lastIndexOf('.')+1),) == 'jpg'))
+
+let mascotas = ficheros
+                    .filter(mascota => mascota.endsWith('.jpg'))
+                    .map(mascota => mascota.slice(0,mascota.lastIndexOf('.')).toUpperCase())
+console.log(mascotas)
+
 
 // function Comparar(coche1, coche2){
 //     if ( coche1.pvp != coche2.pvp ){

@@ -41,6 +41,30 @@
         </button>    
     </div>
     <div id="result" class="result"></div>
+    <div>
+        <div id="responseData"></div>
+        <img id="imgApi" alt="Empty">
+    </div>
+    <div id="responseDataFetch"></div>
 </body>
 </html>
 <script src="./js/minicart.js"></script>
+<script src="../js/service.js"></script>
+<script>
+    const URL = 'https://dummyjson.com/products/1'
+    var xmlHttp = new XMLHttpRequest()
+    xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200 ){
+            console.log(xmlHttp.responseText)
+            showData(JSON.parse(xmlHttp.responseText))
+        }
+    }
+    xmlHttp.open('GET', URL, false)
+    xmlHttp.send()
+
+    function showData (data){
+        document.querySelector('#responseData').innerHTML = data.title
+        document.querySelector('#imgApi').src=data.thumbnail 
+
+    }
+</script>
