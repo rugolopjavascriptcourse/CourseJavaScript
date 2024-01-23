@@ -64,6 +64,8 @@ selectTypeProduct.addEventListener('change', () => {
 })
 
 document.querySelector('#addProduct').addEventListener('click', function(){
+    newProductObject = products.filter (product => product.name === newProduct.value.trim())
+    console.log('%c%s', 'color: #735656', newProductObject);
     newProduct = newProduct.value.trim()
 
    /* !newProduct ? alert('Add a valid product') : cart.push(newProduct) */
@@ -72,7 +74,9 @@ document.querySelector('#addProduct').addEventListener('click', function(){
     }else{
         cart.push(newProduct)
         document.querySelector('#result').innerHTML += 
-            `${newProduct} &emsp &emsp ${newProduct}<br>`
+            `${newProductObject[0].name}  ${newProductObject[0].pvp}
+             ${document.querySelector('#units').value} 
+             ${newProductObject[0].pvp * document.querySelector('#units').value} <br>`
     }
     
    console.log('%c%s', 'color: #1d5673', newProduct); 
