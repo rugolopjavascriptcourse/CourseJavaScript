@@ -7,9 +7,15 @@ h1 {
     text-align: center;
 }
 
+section h1 {
+    color: #fff;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 div {
     border-radius: 10px;
-    background-color: azure;
+    background: rgb(205,238,174);
+    background: linear-gradient(90deg, rgba(205,238,174,1) 0%, rgba(148,190,233,1) 100%);
     margin-left: 100px;
     margin-bottom: 10px;
     width: 80%;   
@@ -20,7 +26,8 @@ div {
 }
 section {
     border-radius: 10px;
-    background-color: azure;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     margin-left: 100px;
     margin-bottom: 10px;
     width: 80%;   
@@ -28,36 +35,18 @@ section {
     padding: 20px;
     box-shadow: 60px, black;
     text-align: center;
+  
 }
 
-.result {
-    color:coral;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    font-size: x-large;
-    font-weight: bolder;
-
-}
-
-.form {
-    font-size: 18px;
-    font-weight: bold;
-
-}
-
-.age {
-    width: 400px;
-}
-
-input{
-    margin: 2px;
-}
 span {
     text-align: center;
     
 }
 button{
-    line-height: 2.5;
-    padding: 0 20px;
+
+    margin: 2px 0 0 0;
+    line-height: 1;
+    padding: 5 20px;
     font-size: 1rem;
     text-align: center;
     color: #fff;
@@ -99,11 +88,4 @@ img {
     width: 300px;
     height: 300px;
     border-radius: 25px;
-}
-
-
-.responseData {
-    font-size: xx-large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
 }
