@@ -8,14 +8,9 @@ var y = 10
 
 var images = ['../hojita/images/Homer_Simpson_2006.png', '../hojita/images/Homersimpson.webp', '../hojita/images/pegatinas.png']
 
-chooseImg()
-
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
-
 function chooseImg(){
-    var imgRandom = getRandomInt(3)
+    //var imgRandom = getRandomInt(3)
+    let imgRandom = Math.floor(Math.random() * 3)
 
     switch (imgRandom) {
         case 0: 
@@ -29,20 +24,20 @@ function chooseImg(){
         image.src=images[2]
         break
     }
-    mover()
+    //mover()
 }
 
-function mover(){
-    console.log(TIME)
-    clearInterval(nIntervalId)
-    let nIntervalId = setInterval(()=>{
-        div_mov.style.top = (y+=DELTA)+'px'
-        if(y>window.innerHeight){
-            y = POS_INICIAL
-            x = Math.random()*window.innerWidth
-            div_mov.style.left = x+'px'
-            chooseImg()
-        }
-    }, TIME)
+// function mover(){
+//     console.log(TIME)
     
-}
+//     let nIntervalId = setInterval(()=>{
+//         div_mov.style.top = (y+=DELTA)+'px'
+//         if(y>window.innerHeight){
+//             y = POS_INICIAL
+//             x = Math.random()*window.innerWidth
+//             div_mov.style.left = x+'px'
+//             chooseImg()
+//         }
+//     }, TIME)
+    
+//}
