@@ -86,10 +86,11 @@ document.querySelector('#inputSearch').addEventListener('input' , () => {
         
     });
 })
-const imageCovers = document.querySelectorAll('img')
+let imageCovers = document.querySelectorAll('img')
 console.log( imageCovers);
+
 imageCovers.forEach(element => {
-    onsole.log( element);
+    console.log( element);
     element.onwheel = (event) => {
         console.log(event);
         let imageWidth = event.target.width

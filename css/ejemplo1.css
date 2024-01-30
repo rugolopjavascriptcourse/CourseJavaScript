@@ -1,5 +1,7 @@
 body {
     background-color: bisque;
+    text-align: center;
+    margin: 2em;
 }
 h1 {
     color: blue;
@@ -18,4 +20,8 @@ div{
 button {
     background-color: aqua;
     color: brown;
+}
+img {
+    margin-top: 2em;
+    border-radius: 5em;
 }
