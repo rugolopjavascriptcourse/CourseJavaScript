@@ -12,6 +12,16 @@ const { data, error } = await supabase.auth.signInWithPassword({
 
   console.log( data);
 
-  const { data, error } = await supabase
-  .from('countries')
+// Create a function to handle inserts
+const handleInserts = (payload) => {
+  console.log('Change received!'+ payload)
+}
+// Listen to inserts
+supabase
+  .channel('posts')
+  .on('postgres_changes', { event: '*', schema: 'public', table: 'posts' }, handleInserts)
+  .subscribe()
+
+  const { posts, errorReadPosts } = await supabase
+  .from('posts')
   .select()

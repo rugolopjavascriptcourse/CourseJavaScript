@@ -119,10 +119,10 @@ function writeNewPost(date, to, username, body) {
     update(ref(db), updates)
     //return app.database().ref().update(updates);
 }
-deleteData()
+
 function deleteData(){
-    remove(ref(db),'post')
-    //app.database().ref("posts").remove()
+    remove(ref(db),'/post')
+    
 }
 
 

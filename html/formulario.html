@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="formulario.php" method="get" name="login">
+      <input type="text" name="user" id="user" required/>
+      <input type="password" name="pass" id="pass" required/>
+      <button type="submit" id="send" name="send">Send</button>
+    </form>
+  </body>
+</html>
+<script>
+  var passwords;
+  var form = document.forms.login
+  
+  
+  function load() {
+    let url = "http://127.0.0.1:5500/assets/passwords.json";
+    try {
+      fetch(url)
+        .then((data) => data.json())
+        .then((data) => {
+            passwords = data
+            console.log(passwords)
+        });
+    } catch (e) {
+      console.log("error: " + e);
+    }
+  }
+
+  function formValidate(){
+    if(document.forms[0].checkValidity()){
+        console.log ('Formulario Ok')
+    }else{
+        var formElements = document.forms[0].elements
+
+        formElements.foreach(element => {
+            if (!element.checkValidity()){
+                console.error(element.validationMessage)
+            }
+        });
+    }
+  }
+  
+  load();
+  
+
+  document.querySelector("#send").addEventListener("click", (e) => {
+    e.preventDefault();
+    formValidate()
+    
+    let miPassQuery = document.querySelector("#pass").value;
+    if (passwords.some((pwd) => pwd === miPassQuery)) {
+      console.log("Password Prohibida" + miPassQuery);
+    } else {
+      console.log("Password OK");
+        
+    }
+  });
+
+</script>
