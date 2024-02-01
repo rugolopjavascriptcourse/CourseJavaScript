@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+/* ICONOS */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+/*  */
+
+body{
+    margin: 0px;
+}
+header{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    z-index: 100;
+    padding: 10px;
+}
+li {
+    list-style: none;
+    margin: 5px;
+    
+}
+a{
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.btnMainMenu{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #1a1818;
+background-color: #0066cc0f;
+padding: 10px 30px;
+border: 2px solid #0066cc;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+width: 250px;
+}
+
+.btnMainMenu:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+.screen {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    top: 0px;
+    position: fixed;
+
+}
+
+article {
+    font-style: italic;
+    width: 60%;   
+    height: auto; 
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 15px;
+    background: rgb(174,223,238);
+    /* background: linear-gradient(90deg, rgba(174,223,238,1) 0%, rgba(4,49,94,1) 100%); */
+    box-shadow: 5px 5px 15px 5px #000000;
+    color: darkblue; 
+    text-align: center;
+}
+#screen-1{
+    background-color: aquamarine;
+    
+}
+#screen-2{
+    background-color: rgb(5, 50, 35);
+  
+}
+#screen-3{
+    background-color: rgb(54, 86, 241);
+    
+}
+
+#menu{
+    background-color: bisque;
+    margin-left: 0px;
+    width: 30%;
+    left: -28%;
+    top: 15vh;
+    height: 80vh;
+    position: fixed;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 1s;
+    
+}
+#titleApp {
+    color: #444444;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    color: #444444;
+    
+    }
+
+#btnLogout{
+    float: right;
+    margin-right: 40px;
+    margin-top: 100px;
+    
+}
+#btnMenu{
+    float: right;
+}

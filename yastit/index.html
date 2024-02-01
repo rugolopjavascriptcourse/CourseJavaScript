@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Yast It</title>
+</head>
+<body>
+    <header><h1 id="titleApp">Yast It</h1></header>
+    <div id="screen-1" class="screen"></div>
+    <div id="screen-2" class="screen"></div>
+    <div id="screen-3" class="screen"></div>
+    <div id="screen-4" class="screen"></div>
+    <div id="menu">
+        <a id="btnMenu" class="material-symbols-outlined">
+            menu
+        </a>
+        <ul>
+            <li>
+                <button id="btnHome" class="btnMainMenu" screen="screen-1">
+                    <span class="material-symbols-outlined">
+                        Home
+                    </span>
+                        Home
+                </button>
+            </li>
+            <li>
+                <button id="btnHome" class="btnMainMenu" screen="screen-2">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                        My Favorites
+                </button>
+            </li>
+            <li>
+                <button id="btnHome" class="btnMainMenu" screen="screen-3">
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                        Top Restaurant
+                </button>
+            </li>
+            <li>
+                <button id="btnAdd" class="btnMainMenu" screen="screen-4">
+                    <span class="material-symbols-outlined">
+                        dinner_dining
+                    </span>
+                       Add New Restaurant
+                </button>
+            </li>     
+        </ul>
+        <button id="btnLogout" class="btnMainMenu">
+            <span class="material-symbols-outlined">
+                logout
+            </span>
+               Logout
+        </button>
+    </div>
+    
+</body>
+</html>
+<script src="js/yastit.js"></script>
