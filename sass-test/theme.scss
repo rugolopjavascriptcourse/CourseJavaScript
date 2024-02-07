@@ -1,0 +1,18 @@
+$primary-bg-color: black;
+$primary-text-color: green;
+$primary-rounded: 15px;
+
+@mixin main-card{
+    position: fixed;
+    right: 0%;
+    margin: 0px;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    //box-shadow: 5px 5px 5px grey;
+}
+
+%text-effect{
+    font-style: italic;
+    font-size: xx-large;
+}

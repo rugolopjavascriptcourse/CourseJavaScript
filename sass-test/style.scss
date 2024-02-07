@@ -1,0 +1,13 @@
+@import 'theme';
+
+#mainDiv{
+    @include main-card;
+    @extend %text-effect;
+    color: $primary-bg-color;
+    background: $primary-text-color;
+    text-align: center;
+    //border-radius: $primary-rounded;
+}
+
+// skfjskfhdjsf
+/*   */
